@@ -1,0 +1,129 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(4, 150, 247);
+    
+}
+
+.header{
+    font-size: 50px;
+    color: green;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+    border: .3px solid black;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: black;
+    /* margin-top: 100px; */
+
+}
+
+.arty1{
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    background: rgb(100, 186, 212);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    margin-top: 250px;
+    padding: 10px;
+}
+
+
+#btnClick{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgb(83, 83, 214);
+    color: white;
+}
+
+#btnClick:hover{
+    background-color: rgb(52, 52, 153);
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+
+.para{
+    color: white;
+}
+
+#game{
+    border: 0.5px solid black;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    bottom: 50px;
+    border-radius: 10px;
+    background: rgb(77, 142, 207);
+    padding: 10px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Defines three columns: left sidebar (1 fraction), main content (3 fractions), right sidebar (1 fraction) */
+  gap: 20px;
+}
+
+
+.right{
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+    top: 100px;
+    left: 126px;
+    height: 1000px;
+    text-align: center;
+    border: .3px solid black;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: black;
+
+}
+
+.left{
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+    top: 100px;
+    right: 126px;
+    height: 1000px;
+    text-align: center;
+    border: .3px solid black;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: black;
+    
+}
+
+.lower{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 30px;
+    left: 127px;
+    color: green;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1005px;
+    height: 80px;
+    text-align: center;
+    border: .3px solid black;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: black;
+}

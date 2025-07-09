@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World!</title>
+</head>
+<body>
+    <h1 class="header">Hello Everyone! I'm styled!</h1>
+
+    <article class="arty1">
+
+        <div id="game">
+    <button id="btnClick">Click this!</button>
+
+
+
+    <p class="para">Clicks: <span id="countUp">0</span></p>
+
+    <script>
+        const btnClick = document.getElementById('btnClick');
+        const countUpDisplay = document.getElementById('countUp');
+
+        let countUp = 0;
+
+        btnClick.addEventListener('click', () => {
+
+            countUp++;
+            countUpDisplay.textContent = countUp;
+        })
+    </script>
+        </div>
+    </article>
+    <div class="container">
+    <aside class="right">
+        <p>AND</p>
+        <p>SO</p>
+    </aside>
+    <aside class="left">
+        <p>ARE</p>
+        <p>WE</p>
+    </aside>
+    </div>
+
+    <div class="lower">
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+</html>
