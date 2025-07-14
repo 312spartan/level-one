@@ -1,0 +1,107 @@
+header {
+    color: Black;
+    padding: 25px;
+    float: top;
+    position: absolute;
+    top: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+
+#card1 {
+    Width: 300px;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(235, 113, 113);
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+#card1 h2 {
+    margin-bottom: 10px;
+}
+
+#card2 {
+    Width: 300px;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(245, 48, 48);
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+#card2 h2 {
+    margin-bottom: 10px;
+}
+
+#card3 {
+    Width: 300px;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(230, 75, 75);
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+#card3 h2 {
+    margin-bottom: 10px;
+}
+
+#card1:hover {
+    transform: scale(1.02) rotate(12.5deg);
+}
+
+#card2:hover {
+    transform: scale(1.02) rotate(12.5deg);
+}
+
+#card3:hover {
+    transform: scale(1.02) rotate(12.5deg);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}

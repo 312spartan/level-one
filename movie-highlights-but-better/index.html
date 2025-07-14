@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Hightlights 2.0</title>
+</head>
+
+<header class="header">
+        <h1>Movie Ratings and Break Downs!</h1>
+    </header>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+<script>
+    var setVanta = ()=>{
+    if (window.VANTA) window.VANTA.CELLS({
+    el: ".s-page-1 .s-section-1 .s-section",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    color1: 0x8c0052,
+    color2: 0xf02452
+    })
+}
+_strk.push(function() {
+  setVanta()
+  window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
+})
+</script>
+
+
+    <div class="container">
+        <main>
+            <div id="card1">
+                <h1>Avengers Inifinity War</h1>
+                <h4>Rating: 8.4</h4>
+                <p>Superheroes do stuff to save things from bad guys.</p>
+            </div>
+
+             <div id="card3">
+                <h1>Doctor Strange</h1>
+                <h4>Rating: 7.5</h4>
+                <p>A Wizard has bad hands and is time and then also beats up 
+                    the darkness.
+                </p>
+            </div>
+
+            <div id="card2">
+                <h1>Naruto: Ninja Clash In The Land Of Snow</h1>
+                <h4>Rating: 6.6</h4>
+                <p>Ninja in a bright orange jumpsuit with raspy loud voice fights ninja train
+                    that tries to steal an actress who can't cry.
+                </p>
+                
+            </div>       
+        </main>
+    </div>
+</body>
+</html>
