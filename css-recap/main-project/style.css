@@ -1,0 +1,66 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    display: flex;
+}
+
+.flex-container {
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-style: italic;
+ display: flex;
+ align-items: flex-start;
+}
+
+.card-one {
+    width: 100px;
+    height: 50px;
+}
+
+.card-one {
+    width: 100px;
+    height: 50px;
+}
+.card-two {
+
+}
+
+.card-three {
+
+}
+
+.card-four {
+
+}
+
+.card-five {
+
+}
+
+.card-six {
+
+}
+
+#image1 {
+    width: 10px;
+    height: 10px;
+}
+
+.image2 {
+
+}
+
+.image3 {
+
+}
+
+.image4 {
+
+}
+
+.image5 {
+
+}
+
+.image6 {
+
+}
