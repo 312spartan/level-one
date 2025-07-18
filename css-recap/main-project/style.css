@@ -1,66 +1,127 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    display: flex;
 }
 
-.flex-container {
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-style: italic;
- display: flex;
- align-items: flex-start;
+.header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    /* display: flex;
+    position: center; */
+    margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: rgb(16, 189, 145);
+    color: white;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* justify-self: center; */
+    border: solid 1px black;
+}
+
+.grid-container .card-one {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: end;
+}
+
+.grid-container .card-two {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: end;
+}
+
+.grid-container .card-three {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: end;
+}
+
+.grid-container .card-four {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: end;
+}
+
+.grid-container .card-five {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: end;
+}
+
+.grid-container .card-six {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: end;
 }
 
 .card-one {
-    width: 100px;
-    height: 50px;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    background: lightgray;
 }
 
-.card-one {
-    width: 100px;
-    height: 50px;
-}
 .card-two {
-
+    border: 0.5px solid black;
+    border-radius: 2px;
+    background: lightgray;
 }
 
 .card-three {
-
+    border: 0.5px solid black;
+    border-radius: 2px;
+    background: lightgray;
 }
 
 .card-four {
-
+    border: 0.5px solid black;
+    border-radius: 2px;
+    background: lightgray;
 }
 
 .card-five {
-
+    border: 0.5px solid black;
+    border-radius: 2px;
+    background: lightgray;
 }
 
 .card-six {
-
+    border: 0.5px solid black;
+    border-radius: 2px;
+    background: lightgray;
 }
 
 #image1 {
-    width: 10px;
-    height: 10px;
+    width: 250px;
+    height: 250px;
 }
 
-.image2 {
-
+#image2 {
+    width: 250px;
+    height: 250px;
 }
 
-.image3 {
-
+#image3 {
+    width: 250px;
+    height: 250px;
 }
 
-.image4 {
-
+#image4 {
+    width: 250px;
+    height: 250px;
 }
 
-.image5 {
-
+#image5 {
+    width: 250px;
+    height: 250px;
 }
 
-.image6 {
-
+#image6 {
+    width: 250px;
+    height: 250px;
 }
