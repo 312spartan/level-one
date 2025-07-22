@@ -19,109 +19,76 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* justify-self: center; */
+   display: grid;
+            background-color: slategray;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            grid-template-columns: 0.3fr 1fr 0.3fr;
+            gap: 20px;
     border: solid 1px black;
+    flex-direction: row;
+    grid-auto-rows: auto;
 }
 
-.grid-container .card-one {
-    grid-column: auto;
-    grid-row: auto;
-    align-self: end;
+.grid-container .card {
+    flex-grow: 20px;
+    align-self: center;
 }
 
-.grid-container .card-two {
-    grid-column: auto;
-    grid-row: auto;
-    align-self: end;
+.card {
+    width: 200px;
+    height: 250px;
+    margin: 1rem auto;
+    perspective: 1000px;
+    cursor: pointer;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
-.grid-container .card-three {
-    grid-column: auto;
-    grid-row: auto;
-    align-self: end;
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
-.grid-container .card-four {
-    grid-column: auto;
-    grid-row: auto;
-    align-self: end;
+.card:hover .card-inner {
+    transform: rotateY(180deg);
 }
 
-.grid-container .card-five {
-    grid-column: auto;
-    grid-row: auto;
-    align-self: end;
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
 }
 
-.grid-container .card-six {
-    grid-column: auto;
-    grid-row: auto;
-    align-self: end;
+.card-front {
+    background: slategray;
+    border: 1px solid black;
 }
 
-.card-one {
+.card-back {
+    background: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* .card {
     border: 0.5px solid black;
     border-radius: 2px;
     background: lightgray;
-}
+} */
 
-.card-two {
-    border: 0.5px solid black;
-    border-radius: 2px;
-    background: lightgray;
-}
-
-.card-three {
-    border: 0.5px solid black;
-    border-radius: 2px;
-    background: lightgray;
-}
-
-.card-four {
-    border: 0.5px solid black;
-    border-radius: 2px;
-    background: lightgray;
-}
-
-.card-five {
-    border: 0.5px solid black;
-    border-radius: 2px;
-    background: lightgray;
-}
-
-.card-six {
-    border: 0.5px solid black;
-    border-radius: 2px;
-    background: lightgray;
-}
-
-#image1 {
+#image {
     width: 250px;
     height: 250px;
 }
 
-#image2 {
-    width: 250px;
-    height: 250px;
-}
 
-#image3 {
-    width: 250px;
-    height: 250px;
-}
-
-#image4 {
-    width: 250px;
-    height: 250px;
-}
-
-#image5 {
-    width: 250px;
-    height: 250px;
-}
-
-#image6 {
-    width: 250px;
-    height: 250px;
-}
