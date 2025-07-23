@@ -12,6 +12,8 @@ body {
     border: 2px solid black;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
     background: rgb(16, 189, 145);
     color: white;
     padding: 20px;
@@ -26,6 +28,7 @@ body {
             grid-template-columns: 0.3fr 1fr 0.3fr;
             gap: 20px;
     border: solid 1px black;
+    border-radius: 0.5rem;
     flex-direction: row;
     grid-auto-rows: auto;
 }
@@ -33,9 +36,6 @@ body {
 .grid-container .card {
     flex-grow: 20px;
     align-self: center;
-}
-
-.card {
     width: 200px;
     height: 250px;
     margin: 1rem auto;
@@ -44,6 +44,16 @@ body {
     box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
     position: relative;
 }
+
+/* .card {
+    width: 200px;
+    height: 250px;
+    margin: 1rem auto;
+    perspective: 1000px;
+    cursor: pointer;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+} */
 
 .card-inner {
     position: relative;
@@ -57,7 +67,16 @@ body {
     transform: rotateY(180deg);
 }
 
-.card-front,
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    border-radius: 0.5rem;
+}
 .card-back {
     position: absolute;
     width: 100%;
@@ -70,7 +89,7 @@ body {
 }
 
 .card-front {
-    background: slategray;
+    background: rgb(8, 206, 196);
     border: 1px solid black;
 }
 
@@ -86,9 +105,21 @@ body {
     background: lightgray;
 } */
 
-#image {
-    width: 250px;
-    height: 250px;
+.card img {
+    width: 200px;
+    height: 175px;
+    top: 2px;
+    border-radius: 0.4rem;
+}
+
+.card p {
+    position: absolute;
+    justify-content: center;
+    bottom: -10px;
+    border: solid 1.5px black;
+    background: rgb(147, 250, 253);
+    padding: 10px;
+    border-radius: 0.4rem;
 }
 
 
