@@ -1,0 +1,76 @@
+.wrapper {
+    background: rgb(133, 221, 111);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border: .5px solid black;
+    border-radius: 50px;
+    height: 750px;
+    width: 600px;
+    position: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+
+
+.topper {
+    position: center;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border: .5px solid black;
+    border-radius: 50px;
+    background: rgb(2, 164, 218);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 90px;
+    width: 450px;
+    margin-top: 275px;
+}
+
+.para {
+    position: center;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border: .5px solid black;
+    border-radius: 50px;
+    background: rgb(51, 153, 187);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 50px;
+    width: 450px;
+    margin-top: 20px;
+}
+
+.para2 {
+    position: center;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border: .5px solid black;
+    border-radius: 50px;
+    background: rgb(38, 123, 151);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 50px;
+    width: 450px;
+    margin-top: 20px;
+}
+
+.para:hover {
+    transform: rotate(360deg);
+    transition: ease 0.5s;
+}
+
+.topper:hover {
+    transform: rotate(-360deg);
+    transition: ease 0.5s;
+}
+
+.para2:hover {
+    transform: rotate(-360deg);
+    transition: ease 0.5s;
+}
