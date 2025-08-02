@@ -33,8 +33,6 @@ if (10 > 2) {
     console.log("Error: This is incorrect.");
 }
 
-
-
 console.log(answer);
 
 console.log(secondAnswer);
