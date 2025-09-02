@@ -186,7 +186,7 @@ restartBtn.addEventListener('click', startGame);
 console.log("Event listeners attached.");
 
 function startGame() {
-    console.log(" startGame() called");
+    console.log("startGame() called");
     currentIndex = 0;
     score = 0;
     console.log("Game state reset:", { currentIndex, score });
