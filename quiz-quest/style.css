@@ -33,7 +33,7 @@ body {
     background: var(--parchment);
     border: 8px solid var(--ink);
     padding: 2rem 1.5rem;
-    border-image: url("https://i.imgur.com/MaYkznG.png") 30 round;
+    /* border-image: url("https://i.imgur.com/MaYkznG.png") 30 round; */
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: opacity 0.3s ease;

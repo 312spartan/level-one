@@ -181,8 +181,8 @@ console.log("Initial state set:", {
     timerId
 });
 
-startBtn.addEventListener('click', startGame);
-restartBtn.addEventListener('click', startGame);
+startBtn.addEventListener("click", startGame);
+restartBtn.addEventListener("click", startGame);
 console.log("Event listeners attached.");
 
 function startGame() {
