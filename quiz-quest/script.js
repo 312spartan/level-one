@@ -216,5 +216,82 @@ const showQuestion = () => {
     resetTimer();
 };
 
+function handleAnswer(e) {
+    clearInterval(timerId);
+    console.log("Timer stopped");
+
+    const chosenIdx = Number(e.target.dataset.index);
+    const q = questions[currentIndex];
+    const buttons = document.querySelectorAll(".answer-btn");
+
+    console.log("Selected answer:", chosenIdx, "| Correct answer:", q.correct);
+
+    buttons.forEach((btn) => {
+        const idx = Number(btn.dataset.index);
+        if (chosenIdx === -1) {
+            if (idx === q.correct) btn.classList.add("correct");
+        } else {
+            if (idx === q.correct) btn.classList.add("correct");
+            else if (idx === chosenIdx) btn.classList.add("wrong");
+        }
+        btn.disabled = true;
+    });
+
+    if (chosenIdx === q.correct) {
+        score++;
+        console.log("🎉 Correct answer! 🎉 Score increased to", score);
+    } else {
+        console.log("❌ Wrong answer.");
+    } 
+
+    setTimeout(() => {
+        currentIndex++;
+        console.log("Moving along! Question:", currentIndex);
+        if (currentIndex < questions.length) {
+            showQuestion();
+        } else { 
+            showResults();
+        }
+    }, 1200);
+}
 
 
+function showResults() {
+    console.log("🏁 Showing results");
+    swapScreen(questionScreen, resultScreen);
+    finalScoreE1.textContent = `You scored ${score} / ${questions.length}!`;
+    console.log("📊 Final score: ", score);
+
+    if (score === questions.length) {
+        resultMsgE1.textContent = "Supreme Quizard of Quizzardry! 🏆";
+    } else if (score >= questions.length / 2) {
+        resultMsgE1.textContent = " Apprentice Quizard! 🧙";
+    } else { 
+        resultMsgE1.textContent = "Muggle! Are you sure you can even use magic? 📚";
+    }
+}
+
+function resetTimer() { 
+    timeLeft = 10;
+    timerDisplay.textContent = `Time: ${timeLeft}s`;
+    clearInterval(timerId);
+    console.log("⏱Timer reset to 10 seconds");
+
+    timerId = setInterval(() => { 
+        timeLeft--;
+        timerDisplay.textContent = `Time: ${timeLeft}s`;
+        if (timeLeft <= 0) { 
+            clearInterval(timerId);
+            console.log("⏰ Time's up! Auto submitting no answer.");
+            handleAnswer({ target: { dataset: { index: -1 } } });
+        }
+    }, 1000)
+}
+
+
+function swapScreen(_, showE1) {
+    const allScreens = document.querySelectorAll(".screen");
+    allScreens.forEach((screen) => screen.classList.add("hidden"));
+    showE1.classList.remove("hidden");
+    console.log(" Switched screens to:", showE1.id);
+}
